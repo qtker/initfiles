@@ -34,6 +34,9 @@
 (add-hook 'after-save-hook
           'executable-make-buffer-file-executable-if-script-p)
 
+;; delete backward char
+(global-set-key "\C-h" 'delete-backward-char)
+
 ;; insert pair of braces
 (electric-pair-mode 1)
 ;===============
