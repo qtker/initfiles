@@ -2,7 +2,7 @@ alias ls='ls -G'
 alias cp='cp -i'
 alias rm='rm -v'
 alias ll='ls -l'
-alias prev='open -a Preview'
+alias pv='open -a Preview'
 alias firefox='open -a Firefox'
 #alias emacs='open -a Emacs'
 #alias emacs='/usr/local/Cellar/emacs/24.4/bin/emacs -nw'
@@ -18,8 +18,10 @@ alias acroread='open -a Adobe\ Reader'
 alias chrome='open -a Google\ Chrome'
 alias mi='open -a mi'
 
-#
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[36m\]\h:\[\033[36m\]\w\[\033[m\]\$ "
+source /usr/local/Cellar/git/2.3.0/share/zsh/site-functions/git-completion.bash
+source /usr/local/Cellar/git/2.3.0/etc/bash_completion.d/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[36m\]\h:\[\033[36m\]\w\[\033[m\]\$(__git_ps1)\[\033[00m\]\$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
