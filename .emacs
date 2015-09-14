@@ -1,20 +1,9 @@
-;(set-default-coding-systems 'utf-8)
-
-;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
-;(load-theme 'solarized-dark t) ;; または　(load-theme 'solarized-light t)
-
 ;display line number
 (global-linum-mode t)
 
-
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-;これだけ
+;theme
 (load-theme 'molokai t)
-
-
-;(setq molokai-theme-kit t)
-
-;(add-to-list 'default-frame-alist '(font . "-apple-courier-medium-r-normal--17-160-72-72-m-10-iso10646-1"))
 
 (set-language-environment "Japanese")
 (set-default-coding-systems 'utf-8) ;これは最後に入れる。leim-list.elがロードされると japanese-iso-8bit (EUC-JP)に戻される。うまくいかない。

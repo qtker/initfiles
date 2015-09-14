@@ -17,9 +17,10 @@ alias mp='open -a Microsoft\ PowerPoint'
 alias acroread='open -a Adobe\ Reader'
 alias chrome='open -a Google\ Chrome'
 alias mi='open -a mi'
+alias atom='open -a Atom'
 
-source /usr/local/Cellar/git/2.3.0/share/zsh/site-functions/git-completion.bash
-source /usr/local/Cellar/git/2.3.0/etc/bash_completion.d/git-prompt.sh
+source /usr/local/Cellar/git/2.4.1/share/zsh/site-functions/git-completion.bash
+source /usr/local/Cellar/git/2.4.1/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[36m\]\h:\[\033[36m\]\w\[\033[m\]\$(__git_ps1)\[\033[00m\]\$ "
 export CLICOLOR=1
