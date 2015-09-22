@@ -143,6 +143,10 @@
                      '(ac-source-perl-completion)))))
 
 
+;; haskell indent
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;Settings of R-mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
