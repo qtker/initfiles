@@ -54,7 +54,7 @@ if which plenv > /dev/null; then eval "$(plenv init -)"; fi
 #export PATH=/usr/local/bin:/Users/tenoritama/.plenv/versions/5.16.3/bin:/Users/tenoritama/.plenv/versions/5.16.3/bin:/Users/tenoritama/.plenv/shims:/Users/tenoritama/.plenv/versions/5.16.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin:$PATH
 
 #This is new path using in plenv(install by using homebrew )
-export PATH=/Users/tenoritama/.plenv/versions/5.16.3/bin:$PATH
+export PATH=/Users/tenoritama/.plenv/versions/5.23.5/bin:$PATH
 
 
 #pythonbrew path
