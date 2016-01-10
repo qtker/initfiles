@@ -31,23 +31,27 @@
 ;===============
 ; package.elの設定
 ;===============
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(package-initialize)
+
+;(add-hook 'python-mode-hook 'jedi:setup)
+;(setq jedi:complete-on-dot t)
+
+;(require 'package)
+;(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;(package-initialize)
 
 
 ;===============
 ; jedi (package.elの設定より下に書く)
 ;===============
-(require 'epc)
-(require 'auto-complete-config)
-(require 'python)
+;(require 'epc)
+;(require 'auto-complete-config)
+;(require 'python)
 
 ;;;;; PYTHONPATH上のソースコードがauto-completeの補完対象になる ;;;;;
-(setenv "PYTHONPATH" "/usr/local/lib/python2.7/site-packages")
-(require 'jedi)
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+;(setenv "PYTHONPATH" "/usr/local/lib/python2.7/site-packages")
+;(require 'jedi)
+;(add-hook 'python-mode-hook 'jedi:setup)
+;(setq jedi:complete-on-dot t)
 
 
 ;; sql indent
@@ -264,15 +268,15 @@
 (setq initial-frame-alist
       (append
        '((top . 20)    ; Y coordinate of the frame (pixel)
-     (left . 44)    ; X coordinate of the frame (pixel)
-   (width . 90)    ; Width of the frame (The number of letters)
-    (height . 41)   ; Height of the frame (The number of letters)
-    ) initial-frame-alist))
+         (left . 44)    ; X coordinate of the frame (pixel)
+         (width . 200)    ; Width of the frame (The number of letters)
+         (height . 80)   ; Height of the frame (The number of letters)
+         ) initial-frame-alist))
 
 
 (if window-system (progn
-   (set-background-color "White")
-   (set-foreground-color "Black")
+   (set-background-color "Black")
+   (set-foreground-color "White")
    (set-cursor-color "Gray")
 ;;  (set-frame-parameter nil 'alpha 90)
 ))

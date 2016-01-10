@@ -5,7 +5,8 @@ alias ll='ls -l'
 alias pv='open -a Preview'
 alias firefox='open -a Firefox'
 #alias emacs='open -a Emacs'
-#alias emacs='/usr/local/Cellar/emacs/24.4/bin/emacs -nw'
+#alias emacs='/usr/local/bin/emacs -nw'
+#alias emacs='/usr/local/Cellar/emacs/24.5/bin/emacs'
 alias emacs='emacs-daemon.sh'
 #alias emacs='emacs -nw'
 alias killemacs="emacsclient -e '(kill-emacs)'"
@@ -76,9 +77,9 @@ export SCALA_HOME=/usr/local/opt/scala/libexec/
 
 eval "$(rbenv init -)"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$HOME/.pyenv/bin:$PATH"
+#eval "$(pyenv init -)"
 
 # node version manager
 source ~/.nvm/nvm.sh
